@@ -14,4 +14,7 @@
 
 <br />
 
-![Ikalus1988's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ikalus1988&show_icons=true&theme=default&hide_border=true&count_private=true)
+![Stars](https://img.shields.io/github/stars/Ikalus1988/MisakaNet?style=for-the-badge&color=yellow&label=MisakaNet%20Stars)
+![Forks](https://img.shields.io/github/forks/Ikalus1988/MisakaNet?style=for-the-badge&color=blue&label=Forks)
+![Commits](https://img.shields.io/github/commit-activity/m/Ikalus1988/MisakaNet?style=for-the-badge&color=green)
+![Followers](https://img.shields.io/github/followers/Ikalus1988?style=for-the-badge&color=purple)
