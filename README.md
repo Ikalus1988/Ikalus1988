@@ -10,6 +10,16 @@
 - **[Industrial RAG](https://github.com/Ikalus1988/self-grow-wiki)** — hybrid retrieval for FANUC robot manuals. 190+ PDFs, 230k+ chunks.
 - 🐚 [pre-commit-dco](https://github.com/Ikalus1988/pre-commit-dco) — 43 行 Python 代码，拒绝 pygrep，独立验证 DCO sign-off。
 
-**MCP 一行接入：** `pip install misakanet-core` → [misakanet.org](https://misakanet.org) 在线搜索所有 failure lessons，支持 MCP 直连 Cursor / Claude / Codex。
+**MisakaNet MCP 一行接入：**
+
+```bash
+pip install misakanet-core
+```
+
+```json
+{ "mcpServers": { "misakanet": { "command": "python", "args": ["-m", "misakanet_core.server"] } }
+```
+
+→ [misakanet.org](https://misakanet.org) 在线搜索所有 failure lessons，MCP 直连 Cursor / Claude / Codex。
 
 📝 [ikalus1988.github.io](https://ikalus1988.github.io/) — case studies, field notes, and project journeys.
