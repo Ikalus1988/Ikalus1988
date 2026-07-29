@@ -1,54 +1,20 @@
-# 👋 I'm Ikalus1988
+# Hi there 👋
 
-> Building zero-dependency, agent-native knowledge infrastructure.
+> Failure is not the opposite of success — it's the raw material of it.
 
-I build **MisakaNet** — a failure-memory MCP server that turns real engineering failures into searchable lessons for Cursor, Claude, Codex, and other coding agents.
+I build **MisakaNet**, a failure-memory MCP server that lets AI coding agents share debugging experiences. When one agent hits a wall, the others don't have to.
 
----
+- **[MisakaNet](https://github.com/Ikalus1988/MisakaNet)** — shared failure-memory MCP server for Cursor, Claude, Codex, and other coding agents. 244 indexed lessons, 18 domains. ![Stars](https://img.shields.io/github/stars/Ikalus1988/MisakaNet?style=flat-square&color=yellow)
+- **[fatal-guard](https://github.com/Ikalus1988/MisakaNet/tree/main/packages/fatal-guard)** — capture fatal crashes in Node.js without patching upstream code. Zero dependencies. ![npm](https://img.shields.io/npm/v/@misaka-net/fatal-guard?style=flat-square)
+- **[Industrial RAG](https://github.com/Ikalus1988/self-grow-wiki)** — hybrid retrieval for FANUC robot manuals. 190+ PDFs, 230k+ chunks.
+- **[misakanet-core](https://github.com/Ikalus1988/misakanet-core)** — zero-dependency BM25 + RRF search engine. `pip install misakanet-core`
+- 🌐 [misakanet.org](https://misakanet.org) — live search across all failure lessons.
+- 📝 [ikalus1988.github.io](https://ikalus1988.github.io/) — case studies, field notes, and project journeys.
 
-## 🚀 What I Build
+<br />
 
-| | Project | Description | Stats |
-|---|---|---|---|
-| 🧠 | **[MisakaNet](https://github.com/Ikalus1988/MisakaNet)** | Failure-memory MCP server for AI coding agents | ![Stars](https://img.shields.io/github/stars/Ikalus1988/MisakaNet?style=flat-square&color=yellow) ![PyPI](https://img.shields.io/pypi/v/misakanet-core?style=flat-square) |
-| 🛡️ | **[fatal-guard](https://github.com/Ikalus1988/MisakaNet/tree/main/packages/fatal-guard)** | Non-invasive crash capture for Node.js. Zero deps. | ![npm](https://img.shields.io/npm/v/@misaka-net/fatal-guard?style=flat-square) |
-| 🏭 | **[Industrial RAG](https://github.com/Ikalus1988/self-grow-wiki)** | Hybrid retrieval for FANUC robot manuals (190+ PDFs) | Private archive |
-
----
-
-## 📊 Ecosystem
-
-![Indexed Lessons](https://img.shields.io/badge/Indexed_Lessons-244-blue?style=flat-square)
-![Registered Nodes](https://img.shields.io/badge/Registered_Nodes-235+-brightgreen?style=flat-square)
-![Domains](https://img.shields.io/badge/Knowledge_Domains-18-orange?style=flat-square)
-![MCP Registry](https://img.shields.io/badge/MCP-Registry-purple?style=flat-square)
-![Glama](https://img.shields.io/badge/Glama-Evaluated-teal?style=flat-square)
-
-**Published on:** [PyPI](https://pypi.org/project/misakanet-core/) · [npm](https://www.npmjs.com/package/@misaka-net/fatal-guard) · [MCP Registry](https://mcp.so/server/misakanet) · [Glama](https://glama.ai/mcp/servers/misakanet)
-
-<details>
-<summary>⚡ Quick Start — MCP Server</summary>
-
-```json
-{
-  "mcpServers": {
-    "misakanet": {
-      "command": "python",
-      "args": ["-m", "misakanet_core.server"]
-    }
-  }
-}
-```
-
-```bash
-pip install misakanet-core
-python -m misakanet_core.search "DCO sign-off failed"
-```
-
-</details>
-
----
-
-## 📬 Connect
-
-🌐 [ikalus1988.github.io](https://ikalus1988.github.io/) · 📦 [misakanet.org](https://misakanet.org) · 💬 [GitHub Issues](https://github.com/Ikalus1988/MisakaNet/issues)
+<picture decoding="async" loading="lazy">
+  <source media="(prefers-color-scheme: light)" srcset="https://pixel-profile.vercel.app/api/github-stats?username=Ikalus1988&screen_effect=false&background=linear-gradient(to%20bottom%20right%2C%20%2374dcc4%2C%20%234597e9)">
+  <source media="(prefers-color-scheme: dark)" srcset="https://pixel-profile.vercel.app/api/github-stats?username=Ikalus1988&screen_effect=true&background=linear-gradient(to%20bottom%20right%2C%20%235580eb%2C%20%232aeeff)">
+  <img alt="github stats" src="https://pixel-profile.vercel.app/api/github-stats?username=Ikalus1988&screen_effect=false&background=linear-gradient(to%20bottom%20right%2C%20%2374dcc4%2C%20%234597e9)">
+</picture>
