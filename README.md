@@ -1,18 +1,33 @@
-# Ikalus1988
+# 👋 I'm Ikalus1988
 
-I build auditable knowledge systems for AI agents.
+> Building zero-dependency, agent-native knowledge infrastructure.
 
-## Things I build
+I build **MisakaNet** — a failure-memory MCP server that turns real engineering failures into searchable lessons for Cursor, Claude, Codex, and other coding agents.
 
-| Project | What it does | Status |
-|---|---|---|
-| **[MisakaNet](https://github.com/Ikalus1988/MisakaNet)** | Failure-memory MCP server for coding agents. 244 indexed lessons across 18 domains. | ![PyPI](https://img.shields.io/pypi/v/misakanet-core) ![MCP](https://img.shields.io/badge/MCP-Registry-blue) |
-| **[fatal-guard](https://github.com/Ikalus1988/MisakaNet/tree/main/packages/fatal-guard)** | Non-invasive crash capture for Node.js. Zero dependencies. | ![npm](https://img.shields.io/npm/v/@misaka-net/fatal-guard) |
-| **[Industrial RAG](https://github.com/Ikalus1988/self-grow-wiki)** | Hybrid retrieval for FANUC robot manuals. 190+ PDFs, 230k+ chunks. | Private archive |
+---
 
-## Quick start
+## 🚀 What I Build
 
-**MCP server (Claude Desktop / Cursor / Windsurf):**
+| | Project | Description | Stats |
+|---|---|---|---|
+| 🧠 | **[MisakaNet](https://github.com/Ikalus1988/MisakaNet)** | Failure-memory MCP server for AI coding agents | ![Stars](https://img.shields.io/github/stars/Ikalus1988/MisakaNet?style=flat-square&color=yellow) ![PyPI](https://img.shields.io/pypi/v/misakanet-core?style=flat-square) |
+| 🛡️ | **[fatal-guard](https://github.com/Ikalus1988/MisakaNet/tree/main/packages/fatal-guard)** | Non-invasive crash capture for Node.js. Zero deps. | ![npm](https://img.shields.io/npm/v/@misaka-net/fatal-guard?style=flat-square) |
+| 🏭 | **[Industrial RAG](https://github.com/Ikalus1988/self-grow-wiki)** | Hybrid retrieval for FANUC robot manuals (190+ PDFs) | Private archive |
+
+---
+
+## 📊 Ecosystem
+
+![Indexed Lessons](https://img.shields.io/badge/Indexed_Lessons-244-blue?style=flat-square)
+![Registered Nodes](https://img.shields.io/badge/Registered_Nodes-235+-brightgreen?style=flat-square)
+![Domains](https://img.shields.io/badge/Knowledge_Domains-18-orange?style=flat-square)
+![MCP Registry](https://img.shields.io/badge/MCP-Registry-purple?style=flat-square)
+![Glama](https://img.shields.io/badge/Glama-Evaluated-teal?style=flat-square)
+
+**Published on:** [PyPI](https://pypi.org/project/misakanet-core/) · [npm](https://www.npmjs.com/package/@misaka-net/fatal-guard) · [MCP Registry](https://mcp.so/server/misakanet) · [Glama](https://glama.ai/mcp/servers/misakanet)
+
+<details>
+<summary>⚡ Quick Start — MCP Server</summary>
 
 ```json
 {
@@ -27,24 +42,13 @@ I build auditable knowledge systems for AI agents.
 
 ```bash
 pip install misakanet-core
-```
-
-**Search lessons from CLI:**
-
-```bash
 python -m misakanet_core.search "DCO sign-off failed"
 ```
 
-## Live stats
+</details>
 
-<!-- These update via GitHub Actions or manual refresh -->
+---
 
-- 📖 **244** indexed failure lessons
-- 🌐 **235+** registered agent nodes
-- 🏷️ **18** knowledge domains
-- 📦 Published: [PyPI](https://pypi.org/project/misakanet-core/) · [npm](https://www.npmjs.com/package/@misaka-net/fatal-guard) · [MCP Registry](https://mcp.so/server/misakanet) · [Glama](https://glama.ai/mcp/servers/misakanet)
+## 📬 Connect
 
-## Find me
-
-- 🌐 [ikalus1988.github.io](https://ikalus1988.github.io/)
-- 📦 [misakanet.org](https://misakanet.org)
+🌐 [ikalus1988.github.io](https://ikalus1988.github.io/) · 📦 [misakanet.org](https://misakanet.org) · 💬 [GitHub Issues](https://github.com/Ikalus1988/MisakaNet/issues)
