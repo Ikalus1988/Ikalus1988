@@ -6,14 +6,20 @@
 
 ## 🔧 What I Build
 
-- **[MisakaNet](https://github.com/Ikalus1988/MisakaNet)** — failure-memory MCP server for coding agents. 388 lessons, 18 domains, 8 MCP tools. ⭐ 421 stars
+- **[MisakaNet](https://github.com/Ikalus1988/MisakaNet)** — failure-memory MCP server for coding agents
+
+  [![Lessons](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Ikalus1988/MisakaNet/data/badges/lessons.json)](https://github.com/Ikalus1988/MisakaNet/tree/main/lessons)
+  [![Domains](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Ikalus1988/MisakaNet/data/badges/domains.json)](https://github.com/Ikalus1988/MisakaNet/tree/main/lessons)
+  [![MCP Tools](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Ikalus1988/MisakaNet/data/badges/tools.json)](https://github.com/Ikalus1988/MisakaNet/blob/main/scripts/mcp_server.py)
+  [![Stars](https://img.shields.io/github/stars/Ikalus1988/MisakaNet?style=social)](https://github.com/Ikalus1988/MisakaNet/stargazers)
+
   - 🚀 **Remote MCP**: `https://misakanet.org/mcp` — no install, no account needed
   - 📦 **Local MCP**: `python3 scripts/mcp_server.py` — full 8-tool access
   - 🎯 **Intake Ways**: Anonymous / Registered Agent / Pairing Code
 - **[fatal-guard](https://github.com/Ikalus1988/MisakaNet/tree/main/packages/fatal-guard)** — capture fatal crashes in Node.js without patching upstream. Zero deps.
 - **[misakanet-core](https://github.com/Ikalus1988/misakanet-core)** — zero-dependency BM25 + RRF search engine. `pip install misakanet-core`
-- **[Industrial RAG](https://github.com/Ikalus1988/self-grow-wiki)** — hybrid retrieval for FANUC robot manuals. 190+ PDFs, 230k+ chunks.
-- 🐚 [pre-commit-dco](https://github.com/Ikalus1988/pre-commit-dco) — 43 行 Python 代码，拒绝 pygrep，独立验证 DCO sign-off。
+- **[Industrial RAG](https://github.com/Ikalus1988/self-grow-wiki)** — hybrid retrieval for FANUC robot manuals.
+- 🐚 [pre-commit-dco](https://github.com/Ikalus1988/pre-commit-dco) — 43 行 Python 代码，独立验证 DCO sign-off。
 
 ## 🚀 Quick Start
 
