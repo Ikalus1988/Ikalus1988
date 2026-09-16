@@ -13,9 +13,10 @@
   [![MCP Tools](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Ikalus1988/MisakaNet/data/badges/tools.json)](https://github.com/Ikalus1988/MisakaNet/blob/main/scripts/mcp_server.py)
   [![Stars](https://img.shields.io/github/stars/Ikalus1988/MisakaNet?style=social)](https://github.com/Ikalus1988/MisakaNet/stargazers)
 
-  - 🚀 **Remote MCP**: `https://misakanet.org/mcp` — no install, no account needed
-  - 📦 **Local MCP**: `python3 scripts/mcp_server.py` — full 8-tool access
-  - 🎯 **Intake Ways**: Anonymous / Registered Agent / Pairing Code
+  - 🚀 **Remote MCP**: `https://misakanet.org/mcp` — 7 tools, no install, no account needed to read
+  - ⚡ **One-command setup**: `npx @misaka-net/misakanet-setup` — wires Claude Code / Codex / Hermes / OpenClaw / codewhale, pre-allows the read-only tools, and prints a redacted health report
+  - 🎯 **Intake Ways**: anonymous MCP intake · `misaka-intake-bot` GitHub Action (CI failure → lesson suggestion) · registered node with a stable `client_id`
+  - 🔍 **Quality machinery**: a provenance gate in CI (a cited source must resolve — placeholders and 404s fail the build), an opt-in auto-merge channel for lesson PRs, and `--report --strict` for CI health gating
 - **[fatal-guard](https://github.com/Ikalus1988/MisakaNet/tree/main/packages/fatal-guard)** — capture fatal crashes in Node.js without patching upstream. Zero deps.
 - **[misakanet-core](https://github.com/Ikalus1988/misakanet-core)** — zero-dependency BM25 + RRF search engine. `pip install misakanet-core`
 - **[Industrial RAG](https://github.com/Ikalus1988/self-grow-wiki)** — hybrid retrieval for FANUC robot manuals.
@@ -43,20 +44,23 @@ pip install misakanet
 misakanet "database is locked"
 ```
 
-## 📚 MCP Tools (8 total)
+## 📚 MCP Tools (7 on the remote endpoint)
 
 | Tool | Auth | Description |
 |------|------|-------------|
-| `misakanet_search` | Required | Search failure lessons by keyword |
-| `misakanet_get_lesson` | Required | Fetch lesson by path or ID |
-| `misakanet_submit_usage` | Required | Submit lesson usage feedback |
-| `misakanet_submit_intake` | **Not required** | Anonymous failure report (creates GitHub issue) |
-| `misakanet_write_lesson` | Required | Submit structured lesson (needs token) |
-| `misakanet_preflight` | Required | Risk check before high-risk operations |
-| `misakanet_usage_status` | Required | Query usage quota and credits |
-| `misakanet_register` | Not required | Register agent, get unlimited token |
+| `misakanet_search` | **Anonymous ok** | Search failure lessons by error text / keyword (5 reads/day/IP anonymously) |
+| `misakanet_get_lesson` | **Anonymous ok** | Fetch one lesson by id or path (same read quota) |
+| `misakanet_submit_intake` | **Anonymous ok** | Report a gap or ask a question → triaged GitHub issue |
+| `misakanet_me_events` | **Anonymous ok** | Reuse evidence for a lesson (helpful votes, cross-node confirmations) — deliberately open, so trust can be checked before it is relied on |
+| `misakanet_register` | Not required | Register a pseudonymous node → `node_id` + 30-day token; pass `client_id` to keep the same node |
+| `misakanet_write_lesson` | Bearer | Submit a structured lesson (`title`/`domain`/`problem`/`root_cause`/`fix`) → lesson-gate |
+| `misakanet_preflight` | Bearer | Risk check before a destructive operation |
+
+Reads need no account, no email, and no GitHub login; a registered node is a pseudonym, not a login. The local stdio server (`python3 scripts/mcp_server.py`) exposes a few extra maintenance tools.
 
 → [misakanet.org](https://misakanet.org) 在线搜索所有 failure lessons，MCP 直连 Cursor / Claude / Codex。
 → [docs/integrations/mcp-remote.md](https://github.com/Ikalus1988/MisakaNet/blob/main/docs/integrations/mcp-remote.md) 完整接入指南
 
 📝 [ikalus1988.github.io](https://ikalus1988.github.io/) — case studies, field notes, and project journeys.
+
+🆕 **[Five Failures That Passed Every Check](https://ikalus1988.github.io/cases/five-failures-that-passed-every-check.html)** — the September log: four pull requests with 24/24 green checks citing a repository that does not exist, a tokenizer that silently dropped every Chinese query, a red check that was telling the truth, a clone 112 commits behind reality, and three security holes in the gate built to prevent exactly that.
