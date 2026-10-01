@@ -15,8 +15,14 @@
 
   - 🚀 **Remote MCP**: `https://misakanet.org/mcp` — 7 tools, no install, no account needed to read
   - ⚡ **One-command setup**: `npx @misaka-net/misakanet-setup` — wires **10 agents** (Claude Code / Codex / Cursor / Gemini CLI / GitHub Copilot / OpenCode / Kiro / Hermes / OpenClaw / codewhale), pre-allows the read-only tools, and prints a redacted health report
+  - 🧩 **DeepSeek Harness plugin**: `dsh plugin --profile web add misakanet` — the same library as a native
+    host surface: a `/misakanet <query>` command that answers in the composer, a right-pane panel (what this
+    session searched, what came back, what was filed, the reuse counters), a General-settings row, and a
+    frame-wide toast — in **zh/en**, verified against `0.1.5-rc.1`, `0.1.7-rc.2` and `0.2.0-rc.2`
+  - 🛰️ **Discovery beyond MCP**: `llms.txt` / `llms-full.txt`, an A2A agent card at
+    `.well-known/agent-card.json`, and a WebMCP surface for browsers
   - 🎯 **Intake Ways**: anonymous MCP intake · the intake bot as a published GitHub Action — `uses: Ikalus1988/MisakaNet@v1`, CI failure → lesson suggestion (needs `actions: read`) · registered node with a stable `client_id`
-  - 🔍 **Quality machinery**: a provenance gate in CI (a cited source must resolve — placeholders and 404s fail the build), an opt-in auto-merge channel for lesson PRs, `--report --strict` for CI health gating, **three required checks** on `main` (DCO, the ubuntu test leg, and a `gate`), a weekly **mutation audit** (a gate that stays green when its check is disabled *fails* the audit), and a weekly **output audit** (an automation that runs but produces nothing fails the run)
+  - 🔍 **Quality machinery**: a provenance gate in CI (a cited source must resolve — placeholders and 404s fail the build), an opt-in auto-merge channel for lesson PRs, `--report --strict` for CI health gating, **four required checks** on `main` (DCO, the ubuntu test leg, `gate`, and `audit`), a **behavioural e2e** that drives the DSH client half in a real host and a real Chromium (the source-level gates can only see *registrations*, never whether anything happens), a weekly **mutation audit** (a gate that stays green when its check is disabled *fails* the audit), and a weekly **output audit** (an automation that runs but produces nothing fails the run)
 - **[state-of-the-repo](https://github.com/Ikalus1988/MisakaNet/blob/main/docs/maintainer/state-of-the-repo.md)** — a publishable snapshot of what runs, what gates can be trusted, and what needs a human decision, so a second maintainer can pick it up without anyone's private notes
 - **[fatal-guard](https://github.com/Ikalus1988/MisakaNet/tree/main/packages/fatal-guard)** — capture fatal crashes in Node.js without patching upstream. Zero deps.
 - **[misakanet-core](https://github.com/Ikalus1988/misakanet-core)** — zero-dependency BM25 + RRF search engine. `pip install misakanet-core`
@@ -62,6 +68,9 @@ Reads need no account, no email, and no GitHub login; a registered node is a pse
 → [misakanet.org](https://misakanet.org) 在线搜索所有 failure lessons，MCP 直连 Cursor / Claude / Codex。
 → [docs/integrations/mcp-remote.md](https://github.com/Ikalus1988/MisakaNet/blob/main/docs/integrations/mcp-remote.md) 完整接入指南
 
+**Where it is listed**: [Glama](https://glama.ai/mcp/servers/Ikalus1988/MisakaNet) (tool definitions rated **A**) · [dsh-plugin.org](https://dsh-plugin.org/plugins/ikalus1988/misakanet) · [DSH Directory](https://dsh.directory/plugins/ikalus1988/misakanet) · [dsh.so](https://www.dsh.so/artifact/misakanet/) · [MCP Toplist](https://mcptoplist.com/server/io.github.Ikalus1988%2Fmisakanet) · [Smithery](https://smithery.ai/servers/misakanet/misakanet) · [HOL Registry](https://hol.org/registry/plugins/Ikalus1988%2FMisakaNet)
+
 📝 [ikalus1988.github.io](https://ikalus1988.github.io/) — case studies, field notes, and project journeys.
 
 🆕 **[Five Failures That Passed Every Check](https://ikalus1988.github.io/cases/five-failures-that-passed-every-check.html)** — the September log: four pull requests with 24/24 green checks citing a repository that does not exist, a tokenizer that silently dropped every Chinese query, a red check that was telling the truth, a clone 112 commits behind reality, and three security holes in the gate built to prevent exactly that.
+
