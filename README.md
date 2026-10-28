@@ -6,7 +6,7 @@
 
 ## 🔧 What I Build
 
-- **[MisakaNet](https://github.com/Ikalus1988/MisakaNet)** — failure-memory MCP server for coding agents · **v2.50.1**
+- **[MisakaNet](https://github.com/Ikalus1988/MisakaNet)** — failure-memory MCP server for coding agents · [![Release](https://img.shields.io/github/v/release/Ikalus1988/MisakaNet?label=release)](https://github.com/Ikalus1988/MisakaNet/releases)
 
   [![Lessons](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Ikalus1988/MisakaNet/data/badges/lessons.json)](https://github.com/Ikalus1988/MisakaNet/tree/main/lessons)
   [![Domains](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Ikalus1988/MisakaNet/data/badges/domains.json)](https://github.com/Ikalus1988/MisakaNet/tree/main/lessons)
@@ -61,11 +61,11 @@ misakanet "database is locked"
 pip install misakanet-core   # BM25 + RRF, stdlib only, CJK-aware tokenization
 ```
 
-> Same name, different things: `pip install misakanet` is the **CLI/stdio server**, `pip install misakanet-core` is the **search library**, and the npm package `misakanet` is the **DSH plugin bundle**. Two of those three carry the DSH-era version number (2.50.1); the library tracks on its own (2.7.0).
+> Same name, different things: `pip install misakanet` is the **CLI/stdio server**, `pip install misakanet-core` is the **search library**, and the npm package `misakanet` is the **DSH plugin bundle**. Two of those three move with the app's release line; the library tracks on its own.
 
 ## 🧩 The setup installer, in full
 
-`@misaka-net/misakanet-setup` (v0.7.1, MIT, **Node 18+, zero dependencies**) is the package
+`@misaka-net/misakanet-setup` ([![npm](https://img.shields.io/npm/v/@misaka-net/misakanet-setup?label=npm)](https://www.npmjs.com/package/@misaka-net/misakanet-setup), MIT, **Node 18+, zero dependencies**) is the package
 the one-liner above runs. It is worth a paragraph, because a tool that "sets up an agent"
 can be doing three unrelated jobs, and only two of them are the same job.
 
